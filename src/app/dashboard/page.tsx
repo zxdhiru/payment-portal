@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col gap-5 p-4 md:py-8 md:px-24 bg-gradient-to-r from-blue-700 to-blue-500">
+    <div className="flex flex-col gap-5 p-2 sm:p-4 md:py-8 md:px-24 bg-gradient-to-r from-blue-700 to-blue-500">
       {/* Header Section */}
       <div className="flex justify-between items-center">
         <div>
@@ -36,20 +36,13 @@ export default function Dashboard() {
       </div>
       
       {/* Payment Methods Section */}
-      <Card className="w-full px-6 py-5 text-white">
-        <h3 className="mb-3 text-lg font-semibold tracking-wider">
+      <Card className="w-full p-2 sm:px-6 sm:py-5 text-white">
+        <h3 className="mb-3 text-lg font-semibold tracking-wider text-center sm:text-left">
           Payment Methods
         </h3>
-        <div className="flex gap-4 flex-wrap">
+        <div className="flex gap-4 flex-wrap sm:flex-nowrap sm:flex-row">
           <CreditCard />
-          <Card className="w-96 h-56 flex flex-col items-center justify-center text-white border-2 border-white border-dashed hover:shadow-md">
-            <Image
-              src={"/favicon.ico"}
-              width={50}
-              height={50}
-              alt="Avatar"
-              className="rounded-full"
-            />
+          <Card className="w-full sm:w-96 flex flex-col items-center justify-center text-white border-2 border-white border-dashed hover:shadow-md">
             <p className="text-blue-800 font-semibold">Add new card</p>
           </Card>
         </div>
@@ -107,10 +100,9 @@ export default function Dashboard() {
 
       {/* Help Section */}
       <div className="text-white">
-        <h3 className="text-lg">Need Help?</h3>
-        <button className="mt-2 bg-blue-500 px-4 py-2 rounded">
-          Contact Support
-        </button>
+        <Card className="w-full sm:w-52 h-max flex flex-col items-center justify-center text-blue-800 hover:text-white cursor-pointer hover:shadow-md">
+            <p className="font-semibold">Contact support</p>
+          </Card>
       </div>
     </div>
   );
