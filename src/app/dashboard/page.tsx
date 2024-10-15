@@ -36,13 +36,13 @@ export default function Dashboard() {
       </div>
       
       {/* Payment Methods Section */}
-      <Card className="w-full p-2 sm:px-6 sm:py-5 text-white">
+      <Card className="w-full p-2 md:p-4 text-white">
         <h3 className="mb-3 text-lg font-semibold tracking-wider text-center sm:text-left">
           Payment Methods
         </h3>
         <div className="flex gap-4 flex-wrap sm:flex-nowrap sm:flex-row">
           <CreditCard />
-          <Card className="w-full sm:w-96 flex flex-col items-center justify-center text-white border-2 border-white border-dashed hover:shadow-md">
+          <Card className="w-full sm:w-96 p-2 flex flex-col items-center justify-center text-white border-2 border-white border-dashed hover:shadow-md">
             <p className="text-blue-800 font-semibold">Add new card</p>
           </Card>
         </div>
@@ -100,7 +100,7 @@ export default function Dashboard() {
 
       {/* Help Section */}
       <div className="text-white">
-        <Card className="w-full sm:w-52 h-max flex flex-col items-center justify-center text-blue-800 hover:text-white cursor-pointer hover:shadow-md">
+        <Card className="w-full sm:w-52 p-2 h-max flex flex-col items-center justify-center text-blue-800 hover:text-white cursor-pointer hover:shadow-md">
             <p className="font-semibold">Contact support</p>
           </Card>
       </div>

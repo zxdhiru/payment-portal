@@ -2,7 +2,7 @@ import Card from "@/components/Card";
 
 export default function CreditCard() {
   return (
-    <Card className="w-full sm:w-96 flex justify-between flex-col gap-8 text-white bg-gradient-to-r from-purple-500 to-indigo-600 hover:shadow-md">
+    <Card className="w-full sm:w-96 p-6 flex justify-between flex-col gap-8 text-white bg-gradient-to-r from-purple-500 to-indigo-600 hover:shadow-md">
         {/* Card Header */}
         <div className="flex justify-between">
           <span className="font-semibold">Debit Card</span>
