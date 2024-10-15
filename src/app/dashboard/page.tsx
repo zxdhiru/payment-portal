@@ -40,7 +40,7 @@ export default function Dashboard() {
         <h3 className="mb-3 text-lg font-semibold tracking-wider">
           Payment Methods
         </h3>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           <CreditCard />
           <Card className="w-96 h-56 flex flex-col items-center justify-center text-white border-2 border-white border-dashed hover:shadow-md">
             <Image
@@ -75,13 +75,13 @@ export default function Dashboard() {
       </Card>
 
       {/* Transaction Filters */}
-      <div className="flex justify-between mb-4 ">
+      <div className="flex justify-between mb-4 flex-wrap gap-4">
         <input
           type="text"
           placeholder="Search transactions"
-          className="px-5 py-2 text-md rounded-full outline-none bg-inherit border-2 border-white border-dotted"
+          className="flex-1 md:flex-none px-5 py-2 text-md rounded-full outline-none bg-inherit border-2 border-white border-dotted"
         />
-        <select className="rounded-full text-md bg-inherit border-2 border-white border-dotted px-5 py-2 outline-none">
+        <select className="flex-1 md:flex-none rounded-full text-md bg-inherit border-2 border-white border-dotted px-5 py-2 outline-none">
           <option className="bg-purple-500">Filter by Date</option>
           <option className="bg-purple-500">Last 7 Days</option>
           <option className="bg-purple-500">Last Month</option>
